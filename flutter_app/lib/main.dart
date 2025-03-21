@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           color: Colors.black38,
           child: Row(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Container(
                 height: 100.0,
