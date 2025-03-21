@@ -108,7 +108,9 @@ class _MyHomePageState extends State<MyHomePage> {
               tileColor: Colors.red,
               title: Text('First Tile'),
               trailing: Text('Join'),
-              onTap: () {},
+              onTap: () {
+                print('You pressed on first tile');
+              },
             ),
           ],
         ),
