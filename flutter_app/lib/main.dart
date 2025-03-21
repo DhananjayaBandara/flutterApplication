@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
               },
               child: Icon(Icons.add),
             ),
+            SizedBox(height: 10.0),
             FloatingActionButton(
               onPressed: () {
                 print('Pressed the FAB2');
