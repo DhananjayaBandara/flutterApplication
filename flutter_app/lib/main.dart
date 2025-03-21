@@ -19,7 +19,14 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter App'), centerTitle: true),
-        drawer: Drawer(child: ListTile(title: Text('Logout'))),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              DrawerHeader(child: Text('Drawer')),
+              ListTile(title: Text('Logout')),
+            ],
+          ),
+        ),
         floatingActionButton: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
