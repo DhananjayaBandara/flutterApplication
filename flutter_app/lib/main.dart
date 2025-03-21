@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter App'), centerTitle: true),
+        drawer: Drawer(),
         floatingActionButton: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
