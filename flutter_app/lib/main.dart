@@ -104,12 +104,23 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           height: double.infinity, // Take as much as place possible for height
           width: double.infinity,
-          margin: EdgeInsets.all(50.0),
+          padding: EdgeInsets.all(50.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25.0),
             color: Colors.red,
           ),
-          child: Text('Hello', style: TextStyle(color: Colors.amber)),
+          child: Container(
+            height:
+                double.infinity, // Take as much as place possible for height
+            width: double.infinity,
+            margin: EdgeInsets.all(50.0),
+            padding: EdgeInsets.all(50.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25.0),
+              color: Colors.orange,
+            ),
+            child: Text('Hello', style: TextStyle(color: Colors.black)),
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
