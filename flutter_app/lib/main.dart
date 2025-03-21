@@ -100,6 +100,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Image.network(
         'https://wallpapers.com/wp-content/themes/wallpapers.com/src/splash-n.jpg',
+        fit: BoxFit.cover,
+        height: double.infinity,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
