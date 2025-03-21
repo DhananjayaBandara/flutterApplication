@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/nav_bar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,22 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(title!), // ! - The value for title is not null currently,
         centerTitle: true,
       ),
-      body:
-          currentIndex == 0
-              ? Center(child: Text('1'))
-              : Center(child: Text('2')),
-      bottomNavigationBar: NavigationBar(
-        destinations: [
-          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-          NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-        ],
-        onDestinationSelected: (int value) {
-          setState(() {
-            currentIndex = value;
-          });
-        },
-        selectedIndex: currentIndex,
-      ),
+      bottomNavigationBar: NavBarWidget(),
     );
   }
 }
