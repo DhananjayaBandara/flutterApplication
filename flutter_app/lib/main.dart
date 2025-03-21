@@ -4,6 +4,15 @@ void main() {
   runApp(const MyApp());
 }
 
+String name = 'Dhananjaya';
+int number = 1;
+double n = 1.0;
+List myList = ['item1', 'item2', 'item3'];
+Map<String, dynamic> myMap = {
+  'String': 'String',
+  'String2': 45896,
+}; // dynamic - all the data types
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
