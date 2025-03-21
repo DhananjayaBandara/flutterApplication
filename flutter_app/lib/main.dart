@@ -99,8 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         leading: Icon(Icons.notification_add, color: Colors.amber),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
+      body: Container(
         child: Stack(
           children: [
             SizedBox(height: 300, child: Center(child: Text('Flutter'))),
