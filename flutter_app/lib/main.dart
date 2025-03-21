@@ -17,38 +17,15 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark,
         ),
       ),
-      home: SafeArea(
-        child: Scaffold(
-          appBar: AppBar(title: Text('Flutter App'), centerTitle: true),
-          drawer: Drawer(
-            child: Column(children: [ListTile(title: Text('Logout'))]),
-          ),
-          floatingActionButton: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              FloatingActionButton(
-                onPressed: () {
-                  print('Pressed the FAB1');
-                },
-                child: Icon(Icons.add),
-              ),
-              SizedBox(height: 10.0),
-              FloatingActionButton(
-                onPressed: () {
-                  print('Pressed the FAB2');
-                },
-                child: Icon(Icons.add),
-              ),
-            ],
-          ),
-          bottomNavigationBar: NavigationBar(
-            destinations: [
-              NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-              NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
-            ],
-            onDestinationSelected: (int value) {},
-            selectedIndex: 1,
-          ),
+      home: Scaffold(
+        appBar: AppBar(title: Text('Flutter App'), centerTitle: true),
+        bottomNavigationBar: NavigationBar(
+          destinations: [
+            NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+            NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
+          ],
+          onDestinationSelected: (int value) {},
+          selectedIndex: 0,
         ),
       ),
     );
