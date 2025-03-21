@@ -98,8 +98,8 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Image.network(
-        'https://wallpapers.com/wp-content/themes/wallpapers.com/src/splash-n.jpg',
+      body: Image.asset(
+        'assets/images/wallpaper1.jpg',
         fit: BoxFit.cover,
         height: double.infinity,
       ),
