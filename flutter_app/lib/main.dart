@@ -100,8 +100,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
-          Image.asset('assets/images/wallpaper1.jpg', fit: BoxFit.cover),
-          Text('Flutter'),
+          Image.asset(
+            'assets/images/wallpaper2.jpg',
+            fit: BoxFit.fill,
+            height: 300,
+          ),
+          SizedBox(height: 300, child: Center(child: Text('Flutter'))),
         ],
       ),
       floatingActionButton: FloatingActionButton(
