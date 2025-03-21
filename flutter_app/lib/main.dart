@@ -105,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Container(
               height: 100.0,
-              width: double.infinity,
+              width: 100.0,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25.0),
                 color: Colors.red,
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
               height: 100.0,
-              width: double.infinity,
+              width: 100.0,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25.0),
                 color: Colors.red,
