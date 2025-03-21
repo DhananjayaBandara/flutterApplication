@@ -104,8 +104,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             Container(
-              height:
-                  double.infinity, // Take as much as place possible for height
+              width: double.infinity,
+              margin: EdgeInsets.all(50.0),
+              padding: EdgeInsets.all(50.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25.0),
+                color: Colors.red,
+              ),
+            ),
+            Container(
               width: double.infinity,
               margin: EdgeInsets.all(50.0),
               padding: EdgeInsets.all(50.0),
