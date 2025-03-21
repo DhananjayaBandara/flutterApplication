@@ -19,11 +19,22 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter App'), centerTitle: true),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            print('Pressed the FAB');
-          },
-          child: Icon(Icons.add),
+        floatingActionButton: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FloatingActionButton(
+              onPressed: () {
+                print('Pressed the FAB1');
+              },
+              child: Icon(Icons.add),
+            ),
+            FloatingActionButton(
+              onPressed: () {
+                print('Pressed the FAB2');
+              },
+              child: Icon(Icons.add),
+            ),
+          ],
         ),
         bottomNavigationBar: NavigationBar(
           destinations: [
