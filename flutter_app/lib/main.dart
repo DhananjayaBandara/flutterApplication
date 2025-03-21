@@ -99,10 +99,12 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         leading: Icon(Icons.notification_add, color: Colors.amber),
       ),
-      body: Row(
+      body: Wrap(
         children: [
           Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
-          Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
+          Text(
+            'This is a too long text!!!!!!!!!!!!!!!!!!!!!!This is a too long text!!!!!!!!!!!!!!!!!!!!!!This is a too long text!!!!!!!!!!!!!!!!!!!!!!',
+          ),
           Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
           Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
           Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
