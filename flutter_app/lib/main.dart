@@ -4,7 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-String title = 'My Flutter Application';
+String? title = 'My Flutter Application'; // ?- title value can be null
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -20,7 +20,10 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text(title), centerTitle: true),
+        appBar: AppBar(
+          title: Text(title!), // ! - The value for title is not null currently,
+          centerTitle: true,
+        ),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
