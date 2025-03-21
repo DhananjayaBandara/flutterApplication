@@ -49,7 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
           NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
         ],
-        onDestinationSelected: (int value) {},
+        onDestinationSelected: (int value) {
+          currentIndex = value;
+        },
         selectedIndex: currentIndex,
       ),
     );
