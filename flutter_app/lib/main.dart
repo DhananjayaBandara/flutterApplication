@@ -4,6 +4,8 @@ void main() {
   runApp(const MyApp());
 }
 
+String title = 'My Flutter Application';
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('Flutter App'), centerTitle: true),
+        appBar: AppBar(title: Text(title), centerTitle: true),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
