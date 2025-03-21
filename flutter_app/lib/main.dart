@@ -99,21 +99,14 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         leading: Icon(Icons.notification_add, color: Colors.amber),
       ),
-      body: Container(
-        child: Stack(
-          children: [
-            SizedBox(height: 300, child: Center(child: Text('Flutter'))),
-            ListTile(
-              leading: Icon(Icons.join_full),
-              tileColor: Colors.red,
-              title: Text('First Tile'),
-              trailing: Text('Join'),
-              onTap: () {
-                print('You pressed on first tile');
-              },
-            ),
-          ],
-        ),
+      body: Row(
+        children: [
+          Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
+          Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
+          Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
+          Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
+          Text('This is a too long text!!!!!!!!!!!!!!!!!!!!!!'),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
