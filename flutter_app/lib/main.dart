@@ -103,12 +103,14 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(20.0),
         child: Stack(
           children: [
-            Image.asset(
-              'assets/images/wallpaper2.jpg',
-              fit: BoxFit.fill,
-              height: 300,
-            ),
             SizedBox(height: 300, child: Center(child: Text('Flutter'))),
+            ListTile(
+              leading: Icon(Icons.join_full),
+              tileColor: Colors.red,
+              title: Text('First Tile'),
+              trailing: Text('Join'),
+              onTap: () {},
+            ),
           ],
         ),
       ),
